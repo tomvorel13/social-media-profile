@@ -27,11 +27,11 @@ body {
   color: #fff; }
 
 body {
-  font-family: "Lato", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 1.7;
-  color: #f7fbfc; }
+  color: #1e354c; }
 
 .u-center-text {
   text-align: center !important; }
@@ -65,6 +65,14 @@ body {
 
 .u-margin-top-small {
   margin-top: 1.5rem !important; }
+
+.background {
+  background-color: #f7fbfc;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; }
 
 .row {
   max-width: 114rem;
@@ -105,3 +113,56 @@ body {
     width: calc( 3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem); }
   .row .col-2-of-3 {
     width: calc( 2 * ((100% - 2 * 6rem) / 3) + 6rem); }
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  height: 70rem;
+  width: 55rem;
+  border-radius: 5px;
+  box-shadow: 0 0.1rem 2rem rgba(0, 0, 0, 0.1); }
+
+.items {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column; }
+  .items__location {
+    font-size: 1.5rem;
+    font-weight: 300; }
+  .items__photo {
+    height: 22rem;
+    width: 22rem;
+    border-radius: 50%;
+    border: 1.2rem solid #f7fbfc; }
+  .items__name {
+    font-size: 2.5rem;
+    font-weight: 300; }
+  .items__about {
+    font-size: 1.2rem;
+    text-align: center; }
+  .items__button {
+    border: none;
+    border-bottom: 0.4rem solid #477db3;
+    background-color: #66b3ff;
+    border-radius: 8px;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #fff;
+    padding: 1.2rem 4rem; }
+
+.bottom-bar {
+  display: flex;
+  width: 100%;
+  background-color: #1e354c;
+  color: #ff6666; }
+  .bottom-bar__favorites {
+    flex: 0 0 33.3333333%;
+    text-align: center; }
+  .bottom-bar__posts {
+    flex: 1;
+    text-align: center; }
+  .bottom-bar__messages {
+    flex: 1;
+    text-align: center; }

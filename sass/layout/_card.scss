@@ -1,0 +1,71 @@
+.card {
+	display: flex;
+	flex-direction: column;
+	background-color: $color-white;
+	height: 70rem;
+	width: 55rem;
+	border-radius: 5px;
+	box-shadow: 0 0.1rem 2rem rgba($color-black, 0.1);
+}
+
+.items {
+	height: 100%;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+
+	&__location {
+		font-size: 1.5rem;
+		font-weight: 300;
+	}
+
+	&__photo {
+		height: 22rem;
+		width: 22rem;
+		border-radius: 50%;
+		border: 1.2rem solid $color-grey;
+	}
+
+	&__name {
+		font-size: 2.5rem;
+		font-weight: 300;
+	}
+
+	&__about {
+		font-size: 1.2rem;
+		text-align: center;
+	}
+
+	&__button {
+		border: none;
+		border-bottom: 0.4rem solid $color-blue-medium;
+		background-color: $color-blue-light;
+		border-radius: 8px;
+		font-size: 2.5rem;
+		font-weight: bold;
+		color: $color-white;
+		padding: 1.2rem 4rem;
+	}
+}
+
+.bottom-bar {
+	display: flex;
+	width: 100%;
+	background-color: $color-blue-dark;
+	color: $color-red;
+
+	&__favorites {
+		flex: 0 0 33.3333333%;
+		text-align: center;
+	}
+
+	&__posts {
+		flex: 1;
+		text-align: center;
+	}
+
+	&__messages {
+		flex: 1;
+		text-align: center;
+	}
+}
