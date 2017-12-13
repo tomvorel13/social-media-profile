@@ -6,6 +6,7 @@
 	width: 55rem;
 	border-radius: 5px;
 	box-shadow: 0 0.1rem 2rem rgba($color-black, 0.1);
+	overflow: hidden;
 }
 
 .items {
@@ -13,30 +14,36 @@
 	display: flex;
 	align-items: center;
 	flex-direction: column;
+	padding: 0 4rem;
 
 	&__location {
 		font-size: 1.5rem;
 		font-weight: 300;
+		margin-top: 3rem;
 	}
 
 	&__photo {
-		height: 22rem;
-		width: 22rem;
+		height: 25rem;
+		width: 25rem;
 		border-radius: 50%;
 		border: 1.2rem solid $color-grey;
+		margin-top: 1rem;
 	}
 
 	&__name {
-		font-size: 2.5rem;
+		font-size: 3rem;
 		font-weight: 300;
+		margin-top: 1rem;
 	}
 
 	&__about {
-		font-size: 1.2rem;
+		font-size: 1.6rem;
 		text-align: center;
+		margin-top: 1.5rem;
 	}
 
 	&__button {
+		margin-top: 4rem;
 		border: none;
 		border-bottom: 0.4rem solid $color-blue-medium;
 		background-color: $color-blue-light;
@@ -44,28 +51,33 @@
 		font-size: 2.5rem;
 		font-weight: bold;
 		color: $color-white;
-		padding: 1.2rem 4rem;
+		padding: 1.5rem 5rem;
 	}
 }
 
 .bottom-bar {
 	display: flex;
 	width: 100%;
+	font-size: 1.8rem;
 	background-color: $color-blue-dark;
 	color: $color-red;
+	line-height: 1.5;
 
-	&__favorites {
-		flex: 0 0 33.3333333%;
-		text-align: center;
+	span {
+		color: $color-white;
 	}
 
-	&__posts {
-		flex: 1;
-		text-align: center;
-	}
-
+	&__favorites,
+	&__posts,
 	&__messages {
 		flex: 1;
 		text-align: center;
+		align-self: stretch;
+		padding: 2.5rem;
+	}
+
+	&__favorites,
+	&__posts {
+		border-right: 1px solid $color-blue-medium;
 	}
 }
